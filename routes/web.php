@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     Route::get('/{first_path?}/{second_path?}/{third_path?}/{fourth_path?}', 'Home@index');
+// });
+
+Route::namespace('Web')->name('web.')->group(function () {
+    // Route::get('/{first_path?}/{second_path?}/{third_path?}/{fourth_path?}', 'Home@index');
+    Route::get('/', 'Home@index');
 });

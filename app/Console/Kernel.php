@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        Commands\SitemapUpdater::class,
+        'App\Console\Commands\SitemapUpdater',
     ];
 
     /**
@@ -24,8 +24,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('SitemapUpdater::check')
-            ->daily();
+        $schedule->command('SitemapUpdater:check')
+            ->everyMinute();
     }
 
     /**

@@ -1,15 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://www.lost-art-seo-demo.netlify.com/project/phoenix-role-model-music-video</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.lost-art-seo-demo.netlify.com/project/david-byrne-art-direction-design</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.lost-art-seo-demo.netlify.com/project/mattel-uno-advertising-campaign</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.lost-art-seo-demo.netlify.com/project/leica-camera-bruce-gilden-exhibition-design</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.lost-art-seo-demo.netlify.com/project/australian-centre-for-photography-bill-henson-photofile</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.lost-art-seo-demo.netlify.com/project/love-deluxe-music-video</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.lost-art-seo-demo.netlify.com/project/leica-sofort-advertising-campaign</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.lost-art-seo-demo.netlify.com/project/the-avalanches-wildflower-campaign</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.lost-art-seo-demo.netlify.com/project/mtv-animation-identity</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.lost-art-seo-demo.netlify.com/project/xl-recordings-social-media-campaign</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.lost-art-seo-demo.netlify.com/projects</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.lost-art-seo-demo.netlify.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-</urlset>
+<urlset 
+            xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"><url>
+                                <loc>http://localhost</loc>
+                                <lastmod>2019-05-12</lastmod>
+                            </url><url>
+                            <loc>http://localhost/project/australian-centre-for-photography-bill-henson-photofile</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url><url>
+                            <loc>http://localhost/project/phoenix-role-model-music-video</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url><url>
+                            <loc>http://localhost/project/leica-sofort-advertising-campaign</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url><url>
+                            <loc>http://localhost/project/love-deluxe-music-video</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url><url>
+                            <loc>http://localhost/project/david-byrne-art-direction-design</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url><url>
+                            <loc>http://localhost/project/leica-camera-bruce-gilden-exhibition-design</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url><url>
+                            <loc>http://localhost/project/mtv-animation-identity</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url><url>
+                            <loc>http://localhost/project/mattel-uno-advertising-campaign</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url><url>
+                            <loc>http://localhost/project/the-avalanches-wildflower-campaign</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url><url>
+                            <loc>http://localhost/project/xl-recordings-social-media-campaign</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url><url>
+                            <loc>http://localhost/page/contact</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url><url>
+                            <loc>http://localhost/page/bio-in-japanese</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url><url>
+                            <loc>http://localhost/page/about-us</loc>
+                            <lastmod>2019-05-12</lastmod>
+                        </url></urlset>

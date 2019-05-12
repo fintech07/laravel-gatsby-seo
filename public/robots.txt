@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /
-Sitemap: https://lost-art-seo-demo.netlify.com/sitemap.xml
-Host: https://lost-art-seo-demo.netlify.com
+Sitemap: https://lost-art.herokuapp.com/sitemap.xml
+Host: https://lost-art.herokuapp.com

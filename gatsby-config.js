@@ -71,8 +71,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://lost-art-seo-demo.netlify.com',
-        sitemap: 'https://lost-art-seo-demo.netlify.com/sitemap.xml',
+        host: 'https://lost-art.herokuapp.com',
+        sitemap: 'https://lost-art.herokuapp.com/sitemap.xml',
         resolveEnv: () => process.env.GATSBY_ENV,
         env: {
           development: {

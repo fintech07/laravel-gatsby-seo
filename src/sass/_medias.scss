@@ -1,0 +1,317 @@
+@media only screen and (max-width: 900px) {
+
+	.swiper--video-Screen .video .video-mp4 {
+    height: 100%;
+  }
+
+  .swiper--video-Height .video-mp4 {
+    object-fit: cover;
+  }
+  .swiper--video-Width .video-mp4 {
+    object-fit: cover;
+  }
+
+  .card-content.mp4 {
+    min-height: auto;
+  }
+  
+	body, button, html, input, p, select, textarea {
+		font-size: 6.25vw;
+		line-height: 6.25vw
+	}
+  .project-layout--right h1, .project-layout--right h2, .project-layout--right h3, 
+  .section-content--menu h1, .section-content--menu h2,
+  .project-item--left h2, .project-item--left h3 {
+      font-size: 6.25vw;
+      line-height: 6.25vw;
+      margin-bottom: 0;
+  }
+  div.progress-bar {
+    height: 12px;
+  }
+  .only_desktop {
+    display: none !important;
+  }
+
+  .only_mobile {
+    display: block !important;
+  }
+
+  .only_mobile_inline {
+    display: inline-block !important;
+  }
+  .project-layout--right p {
+    margin-bottom: 9.22vw;
+  }
+  .project-layout--content {
+    clear: both;
+	  padding-top: 15vw;
+  }
+  .project-layout {
+    padding: 0;
+  }
+  .project-layout--left {
+    float: inherit;
+    width: 100%;
+    clear: both;
+    display: table;
+    position: absolute;
+    top: 0;
+    background: transparent;
+    padding: 6.565vw 6.565vw 9.377vw 6.565vw;
+  }
+  .project-layout.nav_fixed .project-layout--left {
+    background: #fff;
+    position: fixed;
+    z-index: 2;
+  }
+  .project-layout--right {
+    float: inherit;
+    width: 100%;
+    clear: both;
+    /*margin-top: 110px;*/
+    padding:  6.565vw;
+  }
+  .project-layout--right p,
+  .project-layout--right div {
+    line-height: 6vw;
+    font-size: 6.25vw;
+  }
+  .project-layout--right .jpan p {
+	font-size: 5vw;
+  }
+  .project-layout--right .jpan p:last-child {
+	font-size: 6.25vw;
+  }
+  .project-layout--right div.footer div {
+    /*font-size:4.34vw;
+    line-height:4.34vw;
+    letter-spacing:-1px;*/
+    font-size: 18px !important;
+    letter-spacing: -.4px !important;
+    line-height: 18px !important;
+  }
+  .project-layout--right div.footer div .japanfont{
+	  font-size: 3.75vw;
+  }
+  .project-item .project-item--left {
+    width: 100%;
+    float: inherit;
+  }
+
+  .project-item .project-item--right {
+    width: 100%;
+    float: inherit;
+  }
+	.project-item .project-item--right > a {
+	display:block;}
+  .project-item {
+    margin-bottom: 9.375vw;
+    clear: both;
+    display: table;
+    width: 100%;
+  }
+
+  .project-item .project-item--left {
+    width: 100%;
+    float: inherit;
+    margin-top: 5.1567vw;
+  }
+
+  .section-content--menu {
+    position: static;
+  }
+
+  .home-screen .section-content--menu {
+    position: fixed !important;
+    left: 6.565vw !important;
+    top: 6.565vw !important;
+  }
+  .home-screen .section-content--menu {
+    position: fixed !important;
+    left: 6.565vw !important;
+    top: 6.565vw !important;
+  }
+  .home-screen .section-content--footer {
+    left: 6.565vw !important;
+    bottom: 6.565vw !important;
+    font-size: 14px;
+  }
+  .home-screen .section-content--footer .footer .only_mobile_inline {
+    display: none !important;
+  }
+  .home-screen .section-content--footer .footer {
+		font-size: 4.376vw;
+	}
+  .home-screen--slide .fix-screen {
+    height: 100%
+  }
+  .section-content--menu > ul > li {
+    display: inline-block;
+    margin-bottom: 0px;
+	line-height:4.6vw;
+  }
+
+  a.go-back {
+    position: static;
+  }
+
+  .section-content--menu > ul {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .menu-first {
+    float: left;
+  }
+  .menu-second {
+    float: right;
+  }
+  .menu-third {
+  }
+
+  .footer {
+    padding: 0;
+  }
+  .footer a {
+    color: $secondary_colour;
+  }
+  .fix-video {
+    width: 100% !important;
+    margin: 6.565vw 6.565vw 4.69vw 6.565vw !important;
+    height: auto;
+  }
+  .fix-video iframe {
+    width: 100% !important;
+    height: auto
+  }
+  .skip-video {
+    bottom: 32% !important;
+    left: 6.565vw !important;
+    text-align: left;
+    color: $secondary_colour !important;
+  }
+  .fix-height {
+    height: 70%;
+    width: 100%;
+    margin: 6.565vw;
+  }
+  .fix-screen img {
+    width: 100%;
+    height: 100%;
+  }
+  .not-found {
+    padding: 6.565vw;
+  }
+  .p-35 {
+    padding: 4.69vw 6.565vw 6.565vw 6.565vw
+  }
+  .project-layout--right .m-b-35 {
+    margin-bottom: 9.69vw;
+  }
+  .error-layout--right {
+    width: 100%;
+  }
+  .project-caption p {
+    margin-top: 4.69vw;
+  }
+  .video {
+    padding: 6.565vw
+  }
+
+  .video .video-mp4, .video.vimeo .vimeo_wrap iframe {
+    background: transparent;
+  }
+  .video iframe {
+    background: #000;
+  }
+  .col-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 9.376vw;
+  }
+  .nano {
+	  overflow:inherit!important;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .fix-video {
+    width: 100% !important;
+    height: auto;
+  }
+  .fix-video iframe {
+    width: 100% !important;
+    height: auto
+  }
+  .skip-video {
+    bottom: 6.565vw !important;
+    left: 6.565vw !important;
+    text-align: left;
+    color: $secondary_colour !important;
+  }
+  .fix-width {
+    height: 55%;
+  }
+  p {
+    font-size: 5.86667vw;
+    margin: 0 0 2.66667vw;
+  }
+  .project-layout--right p {
+    margin-bottom: 9.22vw;
+  }
+  div.pace div.pace-progress {
+    height: 2.66667vw
+  }
+  .not-found {
+    padding: 6.565vw;
+  }
+  .p-35 {
+    padding: 4.69vw 6.565vw 6.565vw 6.565vw
+  }
+  .section-content--menu > ul {
+  }
+  .project-layout--right .m-b-35 {
+    margin-bottom: 9.375vw;
+  }
+  .error-layout--right {
+    width: 100%;
+  }
+  .project-caption p {
+    margin-top: 4.69vw;
+  }
+  .video {
+    width: 90%
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .video {
+    padding-left: 35px;
+    padding-right: 35px;
+    width: calc(100vw - 70px);
+  }
+
+  iframe {
+    left: 35px;
+    right: 35px;
+  }
+  
+
+}
+@media only screen and (orientation:portrait){
+  div.image.landscape{
+    display: none;
+  }
+  div.image.portrait{
+    display: block;
+  }
+  .project-layout.nav_fixed .project-layout--left {
+    background: #fff;
+    position: fixed;
+  }
+}

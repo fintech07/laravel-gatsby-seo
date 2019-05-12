@@ -51,6 +51,13 @@ class ProjectTemp extends React.Component {
     //setTimeout(function(){ $('.footer').css({ "opacity": "1"}); }, 1000);
     document.body.style.backgroundColor = project.backgroundColorProject;
 
+    $(document).ready(function() {
+        $(document.body).prepend(`<!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDN875T"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->`);
+    });
+
     this.setState({
       location: window.location.pathname
     })
@@ -117,7 +124,7 @@ class ProjectTemp extends React.Component {
         : data_config.meta_title,
       robots: project.metaRobotsProject
         ? project.metaRobotsProject
-        : data_config.meta_robots, 
+        : data_config.meta_robots,
       location: this.state.location
     };
 
@@ -366,7 +373,7 @@ class ProjectTemp extends React.Component {
         );
       }
     }
-    
+
     return (
       <div className="project-screen">
         <Meta {...meta_data} />
@@ -384,7 +391,7 @@ class ProjectTemp extends React.Component {
                   </li>
                 </ul>
                 {
-                  !isMobile && 
+                  !isMobile &&
                   <span>
                     <ul className="menu-second">
                       <li className={project.slug === "about-us" ? "active" : ""}>
@@ -452,15 +459,15 @@ class ProjectTemp extends React.Component {
         </div>
 
         <GoBack className="only_desktop" style={style_second_color} />
-        {isMobile ? 
-          ( 
+        {isMobile ?
+          (
             <style>
                     {`
                     .footer a , .project-layout--right a {color: ${style_second_color.color}}
                     .project-layout--right {color: ${style_primary_color.color}}
                     `}
             </style>
-          ) : 
+          ) :
           (
             <style>
             {`

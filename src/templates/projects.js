@@ -48,6 +48,13 @@ class ProjectTemp extends React.Component {
     document.body.style.backgroundColor =
       themeOptions.backgroundColorOfListingProject;
 
+    $(document).ready(function() {
+        $(document.body).prepend(`<!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDN875T"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->`);
+    });
+
       this.setState({
         location: window.location.pathname
       })
@@ -126,7 +133,7 @@ class ProjectTemp extends React.Component {
       />
     ));
 
-    
+
     return (
       <div className="project-screen">
         <Meta {...meta_data} />

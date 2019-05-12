@@ -12,7 +12,7 @@ var plugins = [{
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
     },{
       plugin: require('/Volumes/Data/MyWork/Lost-Art(Laravel_React_NextJS)/lostart/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
-      options: {"plugins":[],"output":"/sitemap.xml","exclude":["/page/*"]},
+      options: {"plugins":[],"output":"/sitemap.xml"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

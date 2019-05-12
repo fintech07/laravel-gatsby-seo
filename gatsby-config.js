@@ -90,7 +90,6 @@ module.exports = {
         output: `/sitemap.xml`,
         exclude: ["/page/*"],
       }
-    },
-    //`gatsby-plugin-force-trailing-slashes`,
+    }
   ]
 };

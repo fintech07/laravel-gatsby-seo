@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::namespace('Web')->name('web.')->group(function () {
+
+    //Route::get('/sitemap.xml', 'Sitemap@index');
+    //Route::get('/robots.txt', 'Sitemap@robots');
+    Route::get('/', 'Home@index');
 });

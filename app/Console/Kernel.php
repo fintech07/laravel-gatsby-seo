@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('SitemapUpdater:check')
             //->everyMinute();
-            ->daily()
+            ->daily();
     }
 
     /**

@@ -18,7 +18,7 @@ class HomePage extends Component {
             .node;
 
         if (themeOptions.hideHomepageGeneral) {
-            return window.location.pathname = "/projects"
+            return window.location.pathname = "/projects/"
         }
 
         if (!isMobile) {
@@ -138,10 +138,7 @@ class HomePage extends Component {
                     <ul className="menu-first">
                         <li className="active">
                             <h1>
-                                {/* <Link to="/projects" style={style_primary_color}>
-                                    {data_config.head_text}
-                                </Link> */}
-                                <a herf="https://www.completedentures.com.au" target="_blanck" style={style_primary_color}>
+                                <a href="https://www.completedentures.com.au" target="_blank" style={style_primary_color}>
                                     {data_config.head_text}
                                 </a>
                             </h1>

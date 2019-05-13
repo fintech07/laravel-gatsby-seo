@@ -138,17 +138,11 @@ class ProjectTemp extends React.Component {
                             <div className="section-content--menu">
                                 <ul className="menu-first">
                                     <li className="active">
-                                        <h2>
-                                            {/* <Link
-                                                to="/projects/"
-                                                style={style_primary_color}
-                                            >
-                                                {data_config.head_text}
-                                            </Link> */}
-                                            <a herf="https://www.completedentures.com.au" target="_blanck" style={style_primary_color}>
+                                        <h1>
+                                            <a href="https://www.completedentures.com.au" target="_blank" style={style_primary_color}>
                                                 {data_config.head_text}
                                             </a>
-                                        </h2>
+                                        </h1>
                                     </li>
                                 </ul>
                                 <ul className="menu-second">

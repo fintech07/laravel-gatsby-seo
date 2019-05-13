@@ -6,7 +6,7 @@ const GoBack = props => {
   const _style = props.style;
 
   return (
-    <Link to="/projects" className={_class} style={_style}>
+    <Link to="/projects/" className={_class} style={_style}>
       back
     </Link>
   );

@@ -377,7 +377,7 @@ class ProjectTemp extends React.Component {
                 <ul className="menu-first">
                   <li className="active">
                     <h1>
-                      <Link to="/projects" style={style_primary_color}>
+                      <Link to="/projects/" style={style_primary_color}>
                         {data_config.head_text}
                       </Link>
                     </h1>
@@ -388,12 +388,12 @@ class ProjectTemp extends React.Component {
                   <span>
                     <ul className="menu-second">
                       <li className={project.slug === "about-us" ? "active" : ""}>
-                        <Link to="/page/about-us" style={style_second_color}>
+                        <Link to="/page/about-us/" style={style_second_color}>
                           information
                         </Link>
                       </li>
                       <li className={project.slug === "contact" ? "active" : ""}>
-                        <Link to="/page/contact" style={style_second_color}>
+                        <Link to="/page/contact/" style={style_second_color}>
                           contact
                         </Link>
                       </li>
@@ -404,7 +404,7 @@ class ProjectTemp extends React.Component {
                           project.slug === "bio-in-japanese" ? "active" : ""
                         }
                       >
-                        <Link to="/page/bio-in-japanese" style={style_second_color}>
+                        <Link to="/page/bio-in-japanese/" style={style_second_color}>
                           日本語
                         </Link>
                       </li>

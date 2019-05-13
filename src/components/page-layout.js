@@ -73,12 +73,12 @@ class PageLayout extends React.Component {
                   <span>
                     <ul className="menu-second">
                       <li className={page.slug === "about-us" ? "active" : ""}>
-                        <Link to="/page/about-us" style={style_second_color}>
+                        <Link to="/page/about-us/" style={style_second_color}>
                           information
                         </Link>
                       </li>
                       <li className={page.slug === "contact" ? "active" : ""}>
-                        <Link to="/page/contact" style={style_second_color}>
+                        <Link to="/page/contact/" style={style_second_color}>
                           contact
                         </Link>
                       </li>
@@ -89,7 +89,7 @@ class PageLayout extends React.Component {
                           page.slug === "bio-in-japanese" ? "active" : ""
                         }
                       >
-                        <Link to="/page/bio-in-japanese" style={style_second_color}>
+                        <Link to="/page/bio-in-japanese/" style={style_second_color}>
                           日本語
                         </Link>
                       </li>

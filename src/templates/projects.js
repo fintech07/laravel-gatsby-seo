@@ -140,8 +140,7 @@ class ProjectTemp extends React.Component {
                                     <li className="active">
                                         <h2>
                                             <Link
-                                                to="/projects"
-                                                to="/projects"
+                                                to="/projects/"
                                                 style={style_primary_color}
                                             >
                                                 {data_config.head_text}
@@ -152,7 +151,7 @@ class ProjectTemp extends React.Component {
                                 <ul className="menu-second">
                                     <li className="m-r-10">
                                         <Link
-                                            to="/page/about-us"
+                                            to="/page/about-us/"
                                             style={style_primary_color}
                                         >
                                             information
@@ -160,7 +159,7 @@ class ProjectTemp extends React.Component {
                                     </li>
                                     <li>
                                         <Link
-                                            to="/page/contact"
+                                            to="/page/contact/"
                                             style={style_primary_color}
                                         >
                                             contact
@@ -170,7 +169,7 @@ class ProjectTemp extends React.Component {
                                 <ul className="menu-third only_desktop">
                                     <li>
                                         <Link
-                                            to="/page/bio-in-japanese"
+                                            to="/page/bio-in-japanese/"
                                             style={style_primary_color}
                                         >
                                             日本語

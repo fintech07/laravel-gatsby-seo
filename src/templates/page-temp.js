@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import PageLayout from "../components/page-layout";
 import * as app_config from "../constants/app";

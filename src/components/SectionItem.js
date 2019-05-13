@@ -41,17 +41,17 @@ class SectionItem extends Component {
                     case 'Screen':
                         data = <div className="image image--fullpage landscape"
                                     style={backgroundLandscape}></div>;
-                        data_portrait = <div className="image image--fullpage portrait" 
+                        data_portrait = <div className="image image--fullpage portrait"
                                     style={backgroundPortrait}></div>;
                         break;
                     case 'Width':
-                        data = <div className="image image--width landscape" 
+                        data = <div className="image image--width landscape"
                                     style={backgroundLandscape}></div>;
-                        data_portrait = <div className="image image--width portrait" 
+                        data_portrait = <div className="image image--width portrait"
                                     style={backgroundPortrait}></div>;
                         break;
                     case 'Height':
-                        data = <div className="image image--height landscape" 
+                        data = <div className="image image--height landscape"
                                     style={backgroundLandscape}></div>;
                         data_portrait = <div className="image image--height portrait"
                                     style={backgroundPortrait}></div>;
@@ -99,7 +99,7 @@ class SectionItem extends Component {
                             <source src={media.url} type="video/mp4"/>
                             Your browser does not support the video tag.
                         </video>
-                        
+
                     </div>
 
                 </div>;
@@ -108,7 +108,7 @@ class SectionItem extends Component {
         }
 
         return <div className="swiper-slide">
-            <Link to='/projects'>{data}{data_portrait}</Link>
+            <Link to='/projects/'>{data}{data_portrait}</Link>
         </div>
     }
 }

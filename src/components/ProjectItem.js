@@ -46,17 +46,17 @@ let ProjectItem = props => {
   return (
     <div className="project-item" key={project.id}>
       <div className="project-item--right">
-        <Link to={`/project/${project.slug}`}>{media_html}</Link>
+        <Link to={`/project/${project.slug}/`}>{media_html}</Link>
       </div>
 
       <div
         className={`project-item--left project-list project-list-${project.id}`}
       >
-        <Link to={`/project/${project.slug}`}>
+        <Link to={`/project/${project.slug}/`}>
           <h2 style={style_primary_color}>{project.title}</h2>
         </Link>
         <h3 className="desc">
-          <Link style={style_second_color} to={`/project/${project.slug}`}>
+          <Link style={style_second_color} to={`/project/${project.slug}/`}>
             {project.description.description}
           </Link>
         </h3>

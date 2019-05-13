@@ -1,4 +1,4 @@
-#rewrite on URLs from uppercase to lowercase
+# force rewrite on URLs from uppercase to lowercase
 # <IfModule mod_rewrite.c>
 # RewriteEngine on
 # RewriteBase /

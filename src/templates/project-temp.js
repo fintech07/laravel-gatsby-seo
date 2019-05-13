@@ -380,9 +380,9 @@ class ProjectTemp extends React.Component {
                       {/* <Link to="/projects/" style={style_primary_color}>
                         {data_config.head_text}
                       </Link> */}
-                        <link herf="https://www.completedentures.com.au" target="_blanck" style={style_primary_color}>
+                        <a herf="https://www.completedentures.com.au" target="_blanck" style={style_primary_color}>
                             {data_config.head_text}
-                        </link>
+                        </a>
                     </h1>
                   </li>
                 </ul>

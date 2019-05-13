@@ -1,4 +1,6 @@
 import React from "react";
+import renderHTML from 'react-render-html'
+
 import {
     TransitionGroup,
     Transition as ReactTransition
@@ -24,28 +26,6 @@ const getTransitionStyles = {
 };
 
 class Layout extends React.PureComponent {
-    componentDidMount() {
-        const h_gtag = document.getElementById('head_gtag');
-        const b_gtag = document.getElementById("body_gtag");
-
-        if (!h_gtag) {
-            document.head.innerHTML = document.head.innerHTML + `<!-- Google Tag Manager -->
-            <script id="head_gtag">function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-WDN875T');</script>
-            <!-- End Google Tag Manager -->`
-        }
-
-        if (!b_gtag) {
-            const tagcontent = '<!-- Google Tag Manager (noscript) -->\
-            <noscript id="body_gtag"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDN875T"\
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\
-            <!-- End Google Tag Manager (noscript) -->'
-            document.body.innerHTML = (tagcontent) + document.body.innerHTML;
-        }
-    }
     render() {
         //Destructuring props to avoid garbage this.props... in return statement
         const { children, location } = this.props;

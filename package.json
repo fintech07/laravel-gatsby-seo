@@ -9,7 +9,7 @@
         "prod": "npm run production",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "server": "gatsby build && gatsby serve",
-        "build": "rm -r public && rm -r .cache && gatsby build && cp static/index.php public/index.php && cp public/index.html resources/views/web/home/index.blade.php",
+        "build": "rm -r public && gatsby build && cp static/index.php public/index.php && cp public/index.html resources/views/web/home/index.blade.php",
         "develop": "gatsby develop",
         "format": "prettier --write src/**/*.{js,jsx}",
         "start": "npm run develop",

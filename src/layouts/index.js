@@ -1,7 +1,7 @@
 import React from "react";
 import {
-  TransitionGroup,
-  Transition as ReactTransition
+    TransitionGroup,
+    Transition as ReactTransition
 } from "react-transition-group";
 
 //This variable will be responsible for our animation duration
@@ -9,22 +9,22 @@ const timeout = 600;
 
 //This object contains basic styles for animation, but you can extend them to whatever you like. Be creative!
 const getTransitionStyles = {
-  entering: {
-    position: "absolute",
-    opacity: 0
-  },
-  entered: {
-    transition: `opacity ${timeout}ms ease-in-out`,
-    opacity: 1
-  },
-  exiting: {
-    transition: `all ${timeout}ms ease-in-out`,
-    opacity: 0
-  }
+    entering: {
+        position: "absolute",
+        opacity: 0
+    },
+    entered: {
+        transition: `opacity ${timeout}ms ease-in-out`,
+        opacity: 1
+    },
+    exiting: {
+        transition: `all ${timeout}ms ease-in-out`,
+        opacity: 0
+    }
 };
 
 class Layout extends React.PureComponent {
-    componentDidMount(){
+    componentDidMount() {
         const h_gtag = document.getElementById('head_gtag');
         const b_gtag = document.getElementById("body_gtag");
 
@@ -44,40 +44,39 @@ class Layout extends React.PureComponent {
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\
             <!-- End Google Tag Manager (noscript) -->'
             document.body.innerHTML = (tagcontent) + document.body.innerHTML;
-            console.log("innerHtml1", document.body.innerHTML);
         }
     }
-  render() {
-    //Destructuring props to avoid garbage this.props... in return statement
-    const { children, location } = this.props;
+    render() {
+        //Destructuring props to avoid garbage this.props... in return statement
+        const { children, location } = this.props;
 
-    return (
-      //Using TransitionGroup and ReactTransition which are both
-      //coming from  'react-transition-group' and are required for transitions to work
-      <TransitionGroup>
-        <ReactTransition
-          //the key is necessary here because our ReactTransition needs to know when pages are entering/exiting the DOM
-          key={location.pathname}
-          //duration of transition
-          timeout={{
-            enter: timeout,
-            exit: timeout
-          }}
-        >
-          {//Application of the styles depending on the status of page(entering, exiting, entered) in the DOM
-          status => (
-            <div
-              style={{
-                ...getTransitionStyles[status]
-              }}
-            >
-              {children}
-            </div>
-          )}
-        </ReactTransition>
-      </TransitionGroup>
-    );
-  }
+        return (
+            //Using TransitionGroup and ReactTransition which are both
+            //coming from  'react-transition-group' and are required for transitions to work
+            <TransitionGroup>
+                <ReactTransition
+                    //the key is necessary here because our ReactTransition needs to know when pages are entering/exiting the DOM
+                    key={location.pathname}
+                    //duration of transition
+                    timeout={{
+                        enter: timeout,
+                        exit: timeout
+                    }}
+                >
+                    {//Application of the styles depending on the status of page(entering, exiting, entered) in the DOM
+                        status => (
+                            <div
+                                style={{
+                                    ...getTransitionStyles[status]
+                                }}
+                            >
+                                {children}
+                            </div>
+                        )}
+                </ReactTransition>
+            </TransitionGroup>
+        );
+    }
 }
 
 export default Layout;

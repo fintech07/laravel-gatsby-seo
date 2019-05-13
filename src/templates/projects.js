@@ -27,7 +27,7 @@ class ProjectTemp extends React.Component {
         let iScrollPos = 0;
         const el = document.getElementsByClassName("project-layout")[0];
 
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             let iCurScrollPos = $(this).scrollTop();
 
             if (iCurScrollPos > iScrollPos || iCurScrollPos === 0) {
@@ -52,8 +52,6 @@ class ProjectTemp extends React.Component {
         this.setState({
             location: window.location.pathname
         });
-
-
     }
 
     render() {
@@ -102,8 +100,8 @@ class ProjectTemp extends React.Component {
             title:
                 themeOptions.metaTitleOfListingProject !== undefined
                     ? themeOptions.metaTitleOfListingProject +
-                      " | " +
-                      data_config.meta_title
+                    " | " +
+                    data_config.meta_title
                     : data_config.meta_title,
             description: data_config.meta_description,
             keywords: data_config.meta_keywords,
@@ -197,17 +195,17 @@ class ProjectTemp extends React.Component {
                 <style>
                     {`
               .section-content--menu > ul > li > a:hover{color: ${
-                  style_hover.color
-              } !important}
+                        style_hover.color
+                        } !important}
               .footer a:hover {color: ${data_config.primary_color} !important}
               .footer a {color: ${data_config.second_color}}
               .project-layout--right {color: ${data_config.primary_color}}
               .project-list a:hover ~ .desc a{color: ${
-                  style_primary_color.color
-              } !important}
+                        style_primary_color.color
+                        } !important}
               .project-list .desc a:hover{color: ${
-                  data_config.primary_color
-              } !important}
+                        data_config.primary_color
+                        } !important}
               `}
                 </style>
             </div>

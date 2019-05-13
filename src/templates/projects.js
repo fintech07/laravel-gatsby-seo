@@ -139,12 +139,15 @@ class ProjectTemp extends React.Component {
                                 <ul className="menu-first">
                                     <li className="active">
                                         <h2>
-                                            <Link
+                                            {/* <Link
                                                 to="/projects/"
                                                 style={style_primary_color}
                                             >
                                                 {data_config.head_text}
-                                            </Link>
+                                            </Link> */}
+                                            <link herf="https://www.completedentures.com.au" target="_blanck" style={style_primary_color}>
+                                                {data_config.head_text}
+                                            </link>
                                         </h2>
                                     </li>
                                 </ul>

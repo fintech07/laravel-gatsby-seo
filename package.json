@@ -16,7 +16,8 @@
         "serve": "gatsby serve",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
         "heroku-postbuild": "gatsby build",
-        "now-build": "gatsby build"
+        "now-build": "gatsby build",
+        "deploy": "git add . && git commit -m 'normal deploy' && git push heroku master"
     },
     "devDependencies": {
         "axios": "^0.18",

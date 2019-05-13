@@ -45,13 +45,6 @@ class PageLayout extends React.Component {
     //setTimeout(function(){ $('.footer').css({ "opacity": "1"}); }, 300);
     document.body.style.backgroundColor = page.backgroundColorPage
 
-    $(document).ready(function() {
-        $(document.body).prepend(`<!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDN875T"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->`);
-    });
-
     this.setState({
       location: window.location.pathname
     })

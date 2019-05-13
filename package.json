@@ -61,6 +61,7 @@
         "gatsby-source-filesystem": "^2.0.33",
         "gatsby-transformer-remark": "^2.3.12",
         "gatsby-transformer-sharp": "^2.1.19",
+        "interweave": "^11.1.0",
         "jquery": "^3.4.1",
         "node-sass": "^4.12.0",
         "prismjs": "^1.16.0",

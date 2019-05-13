@@ -17,6 +17,16 @@ class HomePage extends Component {
     const themeOptions = this.props.data.allContentfulGeneralOptions.edges[0]
       .node;
 
+    let gtag = document.getElementById("body_gtag");
+    if (!gtag) {
+        gtag = document.createElement("script");
+        document.body.prepend(gtag);
+        gtag.innerHTML = `<!-- Google Tag Manager (noscript) -->
+        <noscript id="body_gtag"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDN875T"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->`;
+    }
+
     if (themeOptions.hideHomepageGeneral) {
       return window.location.pathname = "/projects"
     }
@@ -26,13 +36,6 @@ class HomePage extends Component {
         $(".nano").nanoScroller();
       }
     }
-
-    $(document).ready(function() {
-        $(document.body).prepend(`<!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDN875T"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->`);
-    });
 
     setTimeout(function() {
       $(".footer").css({ opacity: "1" });

@@ -37,7 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     pages.forEach((page, index) => {
       createPage({
-        path: `/page/${page.node.slug}`,
+        path: `/page/${page.node.slug}/`,
         component: pages_temp,
         context: {
           slug: page.node.slug
@@ -49,7 +49,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     projects.forEach((project, index) => {
       createPage({
-        path: `project/${project.node.slug}`,
+        path: `project/${project.node.slug}/`,
         component: project_temp,
         context: {
           slug: project.node.slug,
@@ -58,7 +58,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
 
     createPage({
-      path: `projects`,
+      path: `projects/`,
       component: projectlist,
       context: {
 

@@ -14,8 +14,7 @@
         "format": "prettier --write src/**/*.{js,jsx}",
         "start": "npm run develop",
         "serve": "gatsby serve",
-        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-        "deploy": "git add . && git commit -m 'test deploy' && git push heroku master"
+        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
     },
     "devDependencies": {
         "axios": "^0.18",

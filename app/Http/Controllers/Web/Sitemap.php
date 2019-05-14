@@ -76,7 +76,7 @@ class Sitemap extends Base
 
             $content .= '</urlset>';
 
-            file_put_contents('/sitemap.xml', $content);
+            file_put_contents(public_path() . '/sitemap.xml', $content);
 
         } catch (\Contentful\Core\Exception\NotFoundException $exception) {
             // Entry does not exist
@@ -96,7 +96,7 @@ class Sitemap extends Base
                 abort(404);
             }
 
-            file_put_contents('/robots.txt', $content);
+            file_put_contents(public_path() . '/robots.txt', $content);
 
         } catch (\Contentful\Core\Exception\NotFoundException $exception) {
             // Entry does not exist

@@ -57,8 +57,8 @@ class PageContentfulTemplate extends React.Component {
                 page.metaDescriptionPage.metaDescriptionPage != undefined
                     ? page.metaDescriptionPage.metaDescriptionPage
                     : data_config.meta_description,
-            keywords: page.metaKeywordsPage
-                ? page.metaKeywordsPage
+            keywords: page.metaKeywordsPage.metaKeywordsPage
+                ? page.metaKeywordsPage.metaKeywordsPage
                 : data_config.meta_keywords,
             robots: page.metaRobotsPage
                 ? page.metaRobotsPage

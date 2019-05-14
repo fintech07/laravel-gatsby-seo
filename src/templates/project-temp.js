@@ -112,8 +112,8 @@ class ProjectTemp extends React.Component {
       description: project.metaDescriptionProject.metaDescriptionProject
         ? project.metaDescriptionProject.metaDescriptionProject
         : data_config.meta_title,
-      keywords: project.metaKeywordsProject
-        ? project.metaKeywordsProject
+      keywords: project.metaKeywordsProject.metaKeywordsProject
+        ? project.metaKeywordsProject.metaKeywordsProject
         : data_config.meta_title,
       robots: project.metaRobotsProject
         ? project.metaRobotsProject

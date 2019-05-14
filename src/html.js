@@ -52,8 +52,8 @@ export default function HTML(props) {
             }}
         />
 
-        <script async rc="https://www.googletagmanager.com/gtag/js?id=UA-77795233-1"></script>
-        <script
+        <script async rc="https://www.googletagmanager.com/gtag/js?id=UA-140149190-1"></script>
+        {/* <script
             dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];
@@ -61,6 +61,17 @@ export default function HTML(props) {
             gtag('js', new Date());
 
             gtag('config', 'UA-77795233-1');
+            `
+            }}
+        /> */}
+        <script
+            dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-140149190-1');
             `
             }}
         />

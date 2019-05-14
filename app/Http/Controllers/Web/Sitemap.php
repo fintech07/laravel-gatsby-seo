@@ -8,7 +8,7 @@ class Sitemap extends Base
 
     private $client;
     const THEME_OPTION = '56h552SD6oGyUQa4mweQau';
-    
+
     /**
      * Product constructor.
      */
@@ -23,19 +23,19 @@ class Sitemap extends Base
         $urls = [];
 
         $client = new DeliveryClient(config('contentful.token'),config('contentful.space'));
-        
+
         try {
-            
+
             /*get projects*/
-            $queryProject = new \Contentful\Delivery\Query(); 
+            $queryProject = new \Contentful\Delivery\Query();
             $queryProject->setContentType('project');
             $entriesProjects = $client->getEntries($queryProject);
-            
+
             /*get pages*/
-            $queryPage = new \Contentful\Delivery\Query(); 
+            $queryPage = new \Contentful\Delivery\Query();
             $queryPage->setContentType('pageContent');
             $entriesPages = $client->getEntries($queryPage);
-            
+
             foreach ($entriesProjects as $project) {
                 $metaRobort = $project->getMetaRobotsProject();
                 if (strpos($metaRobort, 'NOINDEX') === false) {
@@ -44,29 +44,29 @@ class Sitemap extends Base
                     //error_log("noindex meta tag");
                 }
             }
-            
+
             foreach ($entriesPages as $page) {
                 //$metaRobort = $page->getMetaRobortsPage();
                 //if (strpos($metaRobort, 'NOINDEX') === false) {
                     $urls[] = env('APP_URL') . "/page/" . $page->getSlug();
                 //}
             }
-            
-            $content = '<urlset 
-            xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+
+            $content = '<urlset
+            xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">';
-            
+
             $date = date('Y-m-d');
-            
+
             if (!empty($urls)) {
                 $content .= '<url>
                                 <loc>' . env('APP_URL') . '</loc>
                                 <lastmod>' . $date . '</lastmod>
                             </url>';
                 foreach ($urls as $url) {
-                    $content .= 
+                    $content .=
                         '<url>
                             <loc>' . $url . '</loc>
                             <lastmod>' . $date . '</lastmod>
@@ -76,7 +76,7 @@ class Sitemap extends Base
 
             $content .= '</urlset>';
 
-            file_put_contents(public_path() . '/sitemap.xml', $content);
+            file_put_contents('/sitemap.xml', $content);
 
         } catch (\Contentful\Core\Exception\NotFoundException $exception) {
             // Entry does not exist
@@ -96,7 +96,7 @@ class Sitemap extends Base
                 abort(404);
             }
 
-            file_put_contents(public_path() . '/robots.txt', $content);
+            file_put_contents('/robots.txt', $content);
 
         } catch (\Contentful\Core\Exception\NotFoundException $exception) {
             // Entry does not exist

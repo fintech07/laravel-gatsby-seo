@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== "production") {
 
 module.exports = {
     siteMetadata: {
-        siteUrl: `https://www.lost-art-seo-demo.netlify.com/`,
+        siteUrl: `https://www.lost-art.herokuapp.com/`,
     },
 
     plugins: [
@@ -66,28 +66,6 @@ module.exports = {
             options: {
                 spaceId: `f9qtzu9dvrki`,
                 accessToken: `bef8878636daf1caabe2f86fea898a7b0c1383e4e20931164eac2fafd6e6d13a`
-            }
-        },
-        {
-            resolve: 'gatsby-plugin-robots-txt',
-            options: {
-                host: 'https://lost-art.herokuapp.com',
-                sitemap: 'https://lost-art.herokuapp.com/sitemap.xml',
-                resolveEnv: () => process.env.GATSBY_ENV,
-                env: {
-                    development: {
-                        policy: [{ userAgent: '*', disallow: ['/'] }]
-                    },
-                    production: {
-                        policy: [{ userAgent: '*', disallow: '/' }]
-                    }
-                }
-            }
-        },
-        {
-            resolve: `gatsby-plugin-sitemap`,
-            options: {
-                output: `/sitemap.xml`,
             }
         }
     ]

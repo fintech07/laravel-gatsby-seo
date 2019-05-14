@@ -43,8 +43,8 @@
 
     RewriteEngine On
 
-    RewriteCond $1 !^(index\.php|css|images|robots\.txt)
-    RewriteCond %{REQUEST_URI} !\.(js|json|css|gif|jpe?g|png)$ [NC]
+    RewriteCond $1 !^(index\.php|js|json|css|images|robots\.txt)
+    #RewriteCond %{REQUEST_URI} !\.(js|json|css|gif|jpe?g|png)$ [NC]
 
     # Lowercase to Uppercase
     RewriteRule [A-Z] - [E=HASCAPS:TRUE,S=1]

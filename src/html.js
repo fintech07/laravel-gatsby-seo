@@ -6,13 +6,12 @@ export default function HTML(props) {
     <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <meta http-equiv="content-language" content="vi"/>
+        <meta name="language" content="vietnamese"/>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta http-equiv="content-language" content="vi"/>
-        <meta name="language" content="vietnamese"/>
         <meta content="en,vi" http-equiv="Content-Language"/>
         <meta content="IE=edge" http-equiv='X-UA-Compatible' />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

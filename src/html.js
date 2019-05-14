@@ -23,6 +23,7 @@ export default function HTML(props) {
             `
             }}
         />
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5882190.js"></script>
       </head>
       <body {...props.bodyAttributes}>
         <noscript

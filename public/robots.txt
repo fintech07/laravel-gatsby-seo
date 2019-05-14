@@ -1,4 +1,4 @@
-Sitemap: https://lost-art.com/sitemap.xml
-User-agent: * 
-Disallow:
-
+User-agent: *
+Disallow: /
+Sitemap: https://lost-art.herokuapp.com/sitemap.xml
+Host: https://lost-art.herokuapp.com

@@ -1,8 +1,7 @@
-# force rewrite on URLs from uppercase to lowercase
+#rewrite on URLs from uppercase to lowercase
 # <IfModule mod_rewrite.c>
 # RewriteEngine on
-
-# RewriteCond %{REQUEST_URI} !\.(js|css|gif|jpe?g|png)$ [NC]
+# RewriteBase /
 # RewriteRule [A-Z] - [E=HASCAPS:TRUE,S=1]
 # RewriteRule ![A-Z] - [S=28]
 # RewriteRule ^([^A]*)A(.*)$ $1a$2
@@ -35,7 +34,6 @@
 # RewriteCond %{ENV:HASCAPS} TRUE
 # RewriteRule ^/?(.*) /$1 [R=301,L]
 # </IfModule>
-
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
@@ -44,40 +42,6 @@
     RewriteEngine On
 
     RewriteCond $1 !^(index\.php|css|images|robots\.txt)
-    #RewriteCond %{REQUEST_URI} !\.(js|json|css|gif|jpe?g|png)$ [NC]
-
-    # Lowercase to Uppercase
-    # RewriteRule [A-Z] - [E=HASCAPS:TRUE,S=1]
-    # RewriteRule ![A-Z] - [S=28]
-    # RewriteRule ^([^A]*)A(.*)$ $1a$2
-    # RewriteRule ^([^B]*)B(.*)$ $1b$2
-    # RewriteRule ^([^C]*)C(.*)$ $1c$2
-    # RewriteRule ^([^D]*)D(.*)$ $1d$2
-    # RewriteRule ^([^E]*)E(.*)$ $1e$2
-    # RewriteRule ^([^F]*)F(.*)$ $1f$2
-    # RewriteRule ^([^G]*)G(.*)$ $1g$2
-    # RewriteRule ^([^H]*)H(.*)$ $1h$2
-    # RewriteRule ^([^I]*)I(.*)$ $1i$2
-    # RewriteRule ^([^J]*)J(.*)$ $1j$2
-    # RewriteRule ^([^K]*)K(.*)$ $1k$2
-    # RewriteRule ^([^L]*)L(.*)$ $1l$2
-    # RewriteRule ^([^M]*)M(.*)$ $1m$2
-    # RewriteRule ^([^N]*)N(.*)$ $1n$2
-    # RewriteRule ^([^O]*)O(.*)$ $1o$2
-    # RewriteRule ^([^P]*)P(.*)$ $1p$2
-    # RewriteRule ^([^Q]*)Q(.*)$ $1q$2
-    # RewriteRule ^([^R]*)R(.*)$ $1r$2
-    # RewriteRule ^([^S]*)S(.*)$ $1s$2
-    # RewriteRule ^([^T]*)T(.*)$ $1t$2
-    # RewriteRule ^([^U]*)U(.*)$ $1u$2
-    # RewriteRule ^([^V]*)V(.*)$ $1v$2
-    # RewriteRule ^([^W]*)W(.*)$ $1w$2
-    # RewriteRule ^([^X]*)X(.*)$ $1x$2
-    # RewriteRule ^([^Y]*)Y(.*)$ $1y$2
-    # RewriteRule ^([^Z]*)Z(.*)$ $1z$2
-    # RewriteRule [A-Z] - [N]
-    # RewriteCond %{ENV:HASCAPS} TRUE
-    # RewriteRule ^/?(.*) /$1 [R=301,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -95,13 +59,4 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
-
-    # Rewrite any request to the wrong domain to use the correct one (here www.)
-    # RewriteCond %{HTTP_HOST} !^www\.
-    # RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-    # Rewrite to HTTPS:
-    # RewriteCond %{HTTPS} off
-    # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
 </IfModule>

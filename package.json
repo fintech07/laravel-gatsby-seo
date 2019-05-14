@@ -15,8 +15,6 @@
         "start": "npm run develop",
         "serve": "gatsby serve",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-        "heroku-postbuild": "gatsby build && cp public/index.html resources/views/web/home/index.blade.php",
-        "now-build": "gatsby build",
         "deploy": "git add . && git commit -m 'test deploy' && git push heroku master"
     },
     "devDependencies": {

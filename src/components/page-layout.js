@@ -70,7 +70,7 @@ class PageLayout extends React.Component {
               <div className="section-content--menu">
               {
                   !isMobile &&
-                  <span>
+                  <>
                     <ul className="menu-second">
                       <li className={page.slug === "about-us" ? "active" : ""}>
                         <Link to="/page/about-us/" style={style_second_color}>
@@ -94,7 +94,7 @@ class PageLayout extends React.Component {
                         </Link>
                       </li>
                     </ul>
-                </span>
+                </>
               }
               </div>
             </div>

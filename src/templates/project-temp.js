@@ -385,7 +385,7 @@ class ProjectTemp extends React.Component {
                 </ul>
                 {
                   !isMobile &&
-                  <span>
+                  <>
                     <ul className="menu-second">
                       <li className={project.slug === "about-us" ? "active" : ""}>
                         <Link to="/page/about-us/" style={style_second_color}>
@@ -409,7 +409,7 @@ class ProjectTemp extends React.Component {
                         </Link>
                       </li>
                     </ul>
-                </span>
+                </>
               }
               </div>
             </div>

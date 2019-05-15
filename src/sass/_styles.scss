@@ -19,7 +19,7 @@ body, button, html, input, p, select, textarea {
   line-height: 22px
 }
 
-.project-layout--right h1, .project-layout--right h2, .project-layout--right h3, 
+.project-layout--right h1, .project-layout--right h2, .project-layout--right h3,
 .section-content--menu h1, .section-content--menu h2,
 .project-item--left h2, .project-item--left h3 {
   font-size: 22px;
@@ -38,6 +38,7 @@ h1, h2 {
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 0;
+  font-family: inherit;
 }
 
 a {
@@ -732,7 +733,7 @@ div.image.portrait {
 .project-caption p  {
   font-size: 18px !important;
   letter-spacing: -.4px;
-  line-height: 18px; 
+  line-height: 18px;
 }
 
 .caption {

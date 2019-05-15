@@ -66,9 +66,15 @@ RewriteRule ^/?(.*) /$1 [R=301,L]
     #RewriteRule ^ index.php [L]
 
     # non-http or non-www to https://www redirect
-    RewriteEngine On
-    RewriteCond %{HTTP_HOST} !^www\.
-    RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # RewriteEngine On
+
+    # When project would deploy it shoud be enabled.
+    # Forcing www
+    #RewriteCond %{HTTP_HOST} !^www\.
+    #RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # http redirect to https
     RewriteCond %{HTTPS} off
     RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 </IfModule>

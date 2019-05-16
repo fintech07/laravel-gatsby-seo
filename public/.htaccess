@@ -46,7 +46,7 @@ RewriteRule ^/?(.*) /$1 [R=301,L]
 
     RewriteEngine On
 
-    RewriteCond $1 !^(index\.php|css|images|robots\.txt)
+    RewriteCond $1 !^(index\.php|css|images|robots\.txt|sitemap\.xml)
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

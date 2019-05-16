@@ -64,8 +64,8 @@ RewriteRule ^/?(.*) /$1 [R=301,L]
     # RewriteRule ^ %1 [L,R=301]
 
     # Forece trailing slash
-     RewriteCond %{REQUEST_URI} !(/$|\.)
-     RewriteRule (.*) %{REQUEST_URI}/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)([^/])$        /$1$2/ [L,R=301]
 
     # Handle Front Controller...
      RewriteCond %{REQUEST_FILENAME} !-d

@@ -2,7 +2,8 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
 
-#RewriteRule \.(js|css|html|json) - [R=301,L]
+RewriteCond %{REQUEST_URI} (/$|\.)
+RewriteRule ^ - [S=30]
 
 RewriteBase /
 RewriteRule [A-Z] - [E=HASCAPS:TRUE,S=1]
@@ -64,7 +65,7 @@ RewriteRule ^/?(.*) /$1 [R=301,L]
     # RewriteRule ^ %1 [L,R=301]
 
     # Forece trailing slash
-    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} !(/$|\.)
     RewriteRule ^(.*)([^/])$        /$1$2/ [L,R=301]
 
     # Handle Front Controller...

@@ -838,6 +838,10 @@ section.route-section {
 }
 .vimeo_wrap {
   background: transparent !important;
+
+  iframe {
+      margin: 0px !important;
+  }
 }
 .main-content {
   min-height: calc(100% - 500px);

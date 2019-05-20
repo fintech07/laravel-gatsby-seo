@@ -61,7 +61,11 @@ a:hover {
 
 .only_mobile,
 .only_mobile_inline {
-  display: none !important;;
+  //display: none !important;;
+  list-style: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 1ms, visibility 1ms !important;
 }
 
 #content {

@@ -1,6 +1,6 @@
 @media only screen and (max-width: 900px) {
 
-	.swiper--video-Screen .video .video-mp4 {
+.swiper--video-Screen .video .video-mp4 {
     height: 100%;
   }
 
@@ -14,12 +14,12 @@
   .card-content.mp4 {
     min-height: auto;
   }
-  
+
 	body, button, html, input, p, select, textarea {
 		font-size: 6.25vw;
 		line-height: 6.25vw
 	}
-  .project-layout--right h1, .project-layout--right h2, .project-layout--right h3, 
+  .project-layout--right h1, .project-layout--right h2, .project-layout--right h3,
   .section-content--menu h1, .section-content--menu h2,
   .project-item--left h2, .project-item--left h3 {
       font-size: 6.25vw;
@@ -138,7 +138,11 @@
     font-size: 14px;
   }
   .home-screen .section-content--footer .footer .only_mobile_inline {
-    display: none !important;
+    //display: none !important;
+    list-style: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 1ms, visibility 1ms !important;
   }
   .home-screen .section-content--footer .footer {
 		font-size: 4.376vw;
@@ -300,7 +304,7 @@
     left: 35px;
     right: 35px;
   }
-  
+
 
 }
 @media only screen and (orientation:portrait){

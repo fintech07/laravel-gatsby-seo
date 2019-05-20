@@ -383,7 +383,7 @@ class ProjectTemp extends React.Component {
                     </h1>
                   </li>
                 </ul>
-                {
+                {/* {
                   !isMobile &&
                   <>
                     <ul className="menu-second">
@@ -410,7 +410,7 @@ class ProjectTemp extends React.Component {
                       </li>
                     </ul>
                 </>
-              }
+              } */}
               </div>
             </div>
 

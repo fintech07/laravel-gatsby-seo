@@ -367,6 +367,76 @@ class ProjectTemp extends React.Component {
       }
     }
 
+    if (isMobile) {
+        return (
+            <div className="project-screen">
+        <Meta {...meta_data} />
+        <div className="project-layout">
+          <div className="project-layout--content">
+            <div className="project-layout--left">
+              <div className="section-content--menu">
+                <ul className="menu-first">
+                  <li className="active">
+                    <h1>
+                        <a href="https://lost-art.com" target="_blank" style={style_primary_color}>
+                            {data_config.head_text}
+                        </a>
+                    </h1>
+                  </li>
+                </ul>
+                <ul className="menu-second">
+                    <li>
+                    <GoBack style={style_second_color} />
+                    </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="project-layout--right">
+              <div className="main-content">
+                {vimeo1}
+                {vimeo2}
+                {vimeo3}
+                {vimeo4}
+                {medias}
+                <h1 className="ttile" style={style_primary_color}>
+                  {project.title}
+                </h1>
+
+                <h2
+                  className="sub-ttile desc m-b-35"
+                  style={style_second_color}
+                >
+                  {project.description.description}
+                </h2>
+
+                <div className="m-b-35 content-project">
+                  {project.content.content
+                    ? renderHTML(project.content.content)
+                    : ""}
+                </div>
+              </div>
+
+              <Footer
+                data_config={data_config}
+                color={
+                  project.footerTextColorProject
+                    ? project.footerTextColorProject
+                    : data_config.footer_color
+                }
+              />
+            </div>
+          </div>
+        </div>
+        <style>
+            {`
+            .footer a , .project-layout--right a {color: ${style_second_color.color}}
+            .project-layout--right {color: ${style_primary_color.color}}
+            `}
+        </style>
+      </div>
+        )
+    }
     return (
       <div className="project-screen">
         <Meta {...meta_data} />
@@ -383,34 +453,6 @@ class ProjectTemp extends React.Component {
                     </h1>
                   </li>
                 </ul>
-                {/* {
-                  !isMobile &&
-                  <>
-                    <ul className="menu-second">
-                      <li className={project.slug === "about-us" ? "active" : ""}>
-                        <Link to="/page/about-us/" style={style_second_color}>
-                          information
-                        </Link>
-                      </li>
-                      <li className={project.slug === "contact" ? "active" : ""}>
-                        <Link to="/page/contact/" style={style_second_color}>
-                          contact
-                        </Link>
-                      </li>
-                    </ul>
-                    <ul className="menu-third only_desktop">
-                      <li
-                        className={
-                          project.slug === "bio-in-japanese" ? "active" : ""
-                        }
-                      >
-                        <Link to="/page/bio-in-japanese/" style={style_second_color}>
-                          日本語
-                        </Link>
-                      </li>
-                    </ul>
-                </>
-              } */}
               </div>
             </div>
 
@@ -452,18 +494,8 @@ class ProjectTemp extends React.Component {
         </div>
 
         <GoBack className="only_desktop" style={style_second_color} />
-        {isMobile ?
-          (
             <style>
-                    {`
-                    .footer a , .project-layout--right a {color: ${style_second_color.color}}
-                    .project-layout--right {color: ${style_primary_color.color}}
-                    `}
-            </style>
-          ) :
-          (
-            <style>
-            {`
+                {`
                   .section-content--menu > ul > li > a:hover {color: ${
                     style_primary_color.color
                   } !important}
@@ -476,8 +508,7 @@ class ProjectTemp extends React.Component {
                   .project-layout--right {color: ${style_primary_color.color}}
                   `}
             </style>
-          )
-        }
+
       </div>
     );
   }

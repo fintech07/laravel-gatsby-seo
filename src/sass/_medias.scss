@@ -1,6 +1,6 @@
 @media only screen and (max-width: 900px) {
 
-.swiper--video-Screen .video .video-mp4 {
+	.swiper--video-Screen .video .video-mp4 {
     height: 100%;
   }
 
@@ -138,11 +138,7 @@
     font-size: 14px;
   }
   .home-screen .section-content--footer .footer .only_mobile_inline {
-    //display: none !important;
-    list-style: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    transition: opacity 1ms, visibility 1ms !important;
+    display: none !important;
   }
   .home-screen .section-content--footer .footer {
 		font-size: 4.376vw;

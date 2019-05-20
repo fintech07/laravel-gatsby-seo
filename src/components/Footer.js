@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import renderHTML from 'react-render-html';
+import { isMobile } from "react-device-detect";
 
 let Footer = ({ data_config, japan, color }) => {
 
@@ -18,13 +19,24 @@ let Footer = ({ data_config, japan, color }) => {
         </div>
     }
 
+    if (isMobile) {
+        return (
+            <div className="footer" style={style_color}>
+            <div>
+                <span className="m-r-10">
+                    <Link to='/page/bio-in-japanese/'>日本語</Link>
+                </span>
+                <span>
+                    {data_config.footer_text ? renderHTML(data_config.footer_text) : ''}
+                </span>
+            </div>
+        </div>
+
+        )
+    }
     return (
         <div className="footer" style={style_color}>
             <div>
-                <span className="only_mobile_inline m-r-10">
-                    <Link to='/page/bio-in-japanese/'>日本語</Link>
-                </span>
-
                 <span>
                     {data_config.footer_text ? renderHTML(data_config.footer_text) : ''}
                 </span>

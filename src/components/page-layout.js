@@ -71,7 +71,7 @@ class PageLayout extends React.Component {
                 <ul className="menu-first">
                   <li className="active">
                     <h1>
-                        <a href="https://lost-art.com" target="_blank" style={style_primary_color}>
+                        <a href="https://lost-art.com" style={style_primary_color}>
                             {data_config.head_text}
                         </a>
                     </h1>

@@ -447,40 +447,40 @@ class ProjectTemp extends React.Component {
                 <ul className="menu-first">
                   <li className="active">
                     <h1>
-                        <a href="https://lost-art.com" target="_blank" style={style_primary_color}>
+                        <a href="https://lost-art.com" style={style_primary_color}>
                             {data_config.head_text}
                         </a>
                     </h1>
                   </li>
                 </ul>
                 <ul className="menu-second">
-                                    <li className="m-r-10">
-                                        <Link
-                                            to="/page/about-us/"
-                                            style={style_primary_color}
-                                        >
-                                            information
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/page/contact/"
-                                            style={style_primary_color}
-                                        >
-                                            contact
-                                        </Link>
-                                    </li>
-                                </ul>
-                                <ul className="menu-third only_desktop">
-                                    <li>
-                                        <Link
-                                            to="/page/bio-in-japanese/"
-                                            style={style_primary_color}
-                                        >
-                                            日本語
-                                        </Link>
-                                    </li>
-                                </ul>
+                    <li className="m-r-10">
+                        <Link
+                            to="/page/about-us/"
+                            style={style_primary_color}
+                        >
+                            information
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="/page/contact/"
+                            style={style_primary_color}
+                        >
+                            contact
+                        </Link>
+                    </li>
+                </ul>
+                <ul className="menu-third only_desktop">
+                    <li>
+                        <Link
+                            to="/page/bio-in-japanese/"
+                            style={style_primary_color}
+                        >
+                            日本語
+                        </Link>
+                    </li>
+                </ul>
               </div>
             </div>
 

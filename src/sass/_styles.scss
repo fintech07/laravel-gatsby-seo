@@ -835,6 +835,9 @@ section.route-section {
 .card-content {
   position: relative;
   z-index: 1;
+  img, video {
+      margin-bottom: 0px;
+  }
 }
 .vimeo_wrap {
   background: transparent !important;

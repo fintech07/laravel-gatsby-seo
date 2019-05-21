@@ -453,6 +453,34 @@ class ProjectTemp extends React.Component {
                     </h1>
                   </li>
                 </ul>
+                <ul className="menu-second">
+                                    <li className="m-r-10">
+                                        <Link
+                                            to="/page/about-us/"
+                                            style={style_primary_color}
+                                        >
+                                            information
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/page/contact/"
+                                            style={style_primary_color}
+                                        >
+                                            contact
+                                        </Link>
+                                    </li>
+                                </ul>
+                                <ul className="menu-third only_desktop">
+                                    <li>
+                                        <Link
+                                            to="/page/bio-in-japanese/"
+                                            style={style_primary_color}
+                                        >
+                                            日本語
+                                        </Link>
+                                    </li>
+                                </ul>
               </div>
             </div>
 

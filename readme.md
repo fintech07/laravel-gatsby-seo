@@ -7,4 +7,6 @@ This is the first project to implement laravel and gatsby together all over the 
 - Backend: Laravel
 - Frontend: Gatsby
 
-The frontend gatsby project auto rebuild by contentful webhook.
+The gatsby project will be rebuilding automatically by contentful webhook.
+
+If you want to check, please click [here](https://lost-art.com)

@@ -61,7 +61,7 @@
         "gatsby-transformer-sharp": "^2.1.19",
         "interweave": "^11.1.0",
         "jquery": "^3.4.1",
-        "node-sass": "^4.12.0",
+        "node-sass": "^7.0.0",
         "prismjs": "^1.16.0",
         "react": "^16.8.6",
         "react-device-detect": "^1.6.2",
